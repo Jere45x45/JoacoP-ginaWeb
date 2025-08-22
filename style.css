@@ -1,0 +1,14 @@
+body{
+    background-color: #8787;
+}
+#título{
+    text-align: center;
+}
+#nombre{
+    width: 200px;
+    text-align: center;
+}
+#precio{
+    width: 200px;
+    text-align: center;
+}
