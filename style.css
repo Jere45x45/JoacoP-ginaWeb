@@ -12,21 +12,7 @@ body {
     text-align: center;
     margin: 5px;
 }
-
-#div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* ✅ ahora sí funciona */
-    margin-top: 20px;
-}
-
-.producto {
-    background-color: rgb(2, 123, 40);
-    border-radius: 6px;
-    padding: 10px;
-    color: white;
-}
-    
+   
 #botón {
     padding: 6px 12px;
     font-size: 14px;
@@ -39,4 +25,36 @@ body {
 
 #botón:hover {
     background-color: #0056b3;
+}
+
+#div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 123, 40);
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    gap: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: 35px;
+}
+
+.imagen-producto {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
 }
