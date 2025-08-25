@@ -2,50 +2,32 @@ let nombre = document.getElementById("nombre");
 let precio = document.getElementById("precio");
 let botón = document.getElementById("botón");
 let div = document.getElementById("div");
-let imagen = document.getElementById("imagen");
 
 function agregardiv() {
     let b = nombre.value.trim();
     let c = precio.value.trim();
-    let file = imagen.files[0];
 
     if (!b || !c) {
-        alert("Por favor, completa todos los campos.");
+        alert("Por favor, completa ambos campos.");
         return;
     }
 
-    let reader = new FileReader();
-    reader.onload = function(e) {
-        let productoDiv = document.createElement("div");
-        productoDiv.classList.add("producto");
+    let productoDiv = document.createElement("div");
+    productoDiv.classList.add("producto");
 
-        let textoDiv = document.createElement("div");
-        textoDiv.classList.add("texto");
+    let a = document.createElement("h1");
+    let h1 = document.createElement("h2");
 
-        let titulo = document.createElement("h1");
-        titulo.textContent = b;
+    a.textContent = b;
+    h1.textContent = "$" + c;
 
-        let precioTag = document.createElement("h2");
-        precioTag.textContent = "$" + c;
+    productoDiv.appendChild(a);
+    productoDiv.appendChild(h1);
 
-        textoDiv.appendChild(titulo);
-        textoDiv.appendChild(precioTag);
+    div.appendChild(productoDiv);
 
-        let img = document.createElement("img");
-        img.src = e.target.result;
-        img.alt = "Imagen del producto";
-        img.classList.add("imagen-producto");
-
-        productoDiv.appendChild(textoDiv);
-        productoDiv.appendChild(img);
-        div.appendChild(productoDiv);
-
-        nombre.value = "";
-        precio.value = "";
-        imagen.value = "";
-    };
-
-    reader.readAsDataURL(file);
+    nombre.value = "";
+    precio.value = "";
 }
 
 botón.addEventListener("click", agregardiv);

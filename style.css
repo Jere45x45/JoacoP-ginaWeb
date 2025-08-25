@@ -1,18 +1,115 @@
 body {
-    background-color: #e9ecef;
+    background-color: #101010;
     font-family: Arial, sans-serif;
 }
-
-#título {
-    text-align: center;
+#logo{
+    height: 400px;
 }
 
-#nombre, #precio {
+#producto{
+    width: 266;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #006D00;
+}
+
+#precio{
+    width: 266;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #006D00;
+}
+
+#cantidad-vendida{
+    width: 266;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #006D00;
+}
+
+#menos{
+    width: 266;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #6D0000;
+}
+
+#más{
+    width: 266;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #6D0000;
+}
+
+#agregar{
+    width: 243;
+    height: 69;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background: #00166D;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#nombre, #precio{
     width: 200px;
     text-align: center;
     margin: 5px;
 }
-   
+
+#div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: rgb(2, 123, 40);
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+}
+    
 #botón {
     padding: 6px 12px;
     font-size: 14px;
@@ -25,36 +122,4 @@ body {
 
 #botón:hover {
     background-color: #0056b3;
-}
-
-#div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.producto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(2, 123, 40);
-    border-radius: 6px;
-    padding: 10px;
-    color: white;
-    gap: 20px;
-}
-
-.texto {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    font-size: 35px;
-}
-
-.imagen-producto {
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
 }
