@@ -1,11 +1,11 @@
-let nombre = document.getElementById("nombre");
+let nombre = document.getElementById("producto");
 let precio = document.getElementById("precio");
-let botón = document.getElementById("botón");
+let botón = document.getElementById("agregar");
 let div = document.getElementById("div");
 
 function agregardiv() {
-    let b = nombre.value.trim();
-    let c = precio.value.trim();
+    let b = nombre.value;
+    let c = precio.value;
 
     if (!b || !c) {
         alert("Por favor, completa ambos campos.");

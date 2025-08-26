@@ -9,6 +9,7 @@ body {
 }
 
 #producto{
+    text-align: center;
     width: 266;
     height: 69;
     opacity: 1;
@@ -23,6 +24,7 @@ body {
 }
 
 #precio{
+    text-align: center;
     width: 266;
     height: 69;
     opacity: 1;
@@ -37,6 +39,7 @@ body {
 }
 
 #cantidad-vendida{
+    text-align: center;
     width: 266;
     height: 69;
     opacity: 1;
