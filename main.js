@@ -39,11 +39,11 @@ function agregardiv() {
     cantidadNum.textContent = 0;
 
     let btnMenos = document.createElement("button");
-    btnMenos.textContent = "-";
+    btnMenos.textContent = "<";
     btnMenos.classList.add("btn");
 
     let btnMas = document.createElement("button");
-    btnMas.textContent = "+";
+    btnMas.textContent = ">";
     btnMas.classList.add("btn", "mas");
 
     btnMas.addEventListener("click", () => incrementar(cantidadNum));
